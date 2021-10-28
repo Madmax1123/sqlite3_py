@@ -11,7 +11,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS names(
 	);""")
 # INSERI VALORES NO DATA
 cursor.execute("INSERT INTO names VALUES('Nome')")
-db.commit()
+path_db.commit()
 
 # SELECIONA VALORES DO DATA E COLOCA SEUS ID"NÚMERAÇÃO"
 cursor.execute("SELECT rowid, * FROM names")
