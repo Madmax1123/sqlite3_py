@@ -12,7 +12,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS names(
 
 N_name = input('Insert a name:')
 # INSERI VALORES NO DATA
-cursor.execute("INSERT INTO names(name) VALUES(?)", (N_name))
+cursor.execute("INSERT INTO names(name) VALUES(?)", [N_name])
 path_db.commit()
 
 # SELECIONA VALORES DO DATA E COLOCA SEUS ID"NÚMERAÇÃO"
